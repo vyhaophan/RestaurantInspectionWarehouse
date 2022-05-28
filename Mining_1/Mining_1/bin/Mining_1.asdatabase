@@ -1,0 +1,734 @@
+﻿<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Mining_1</ID>
+  <Name>Mining_1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <LastUpdate>0001-01-01T00:00:00Z</LastUpdate>
+  <DataSourceImpersonationInfo>
+    <ImpersonationMode>Default</ImpersonationMode>
+    <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+  </DataSourceImpersonationInfo>
+  <MiningStructures>
+    <MiningStructure>
+      <ID>Inspection Results Data Mining</ID>
+      <Name>Inspection Results Data Mining</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+          <Value>dbo_Inspection_Results_dataMining</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+          <Value>
+            <dds xmlns="">
+              <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8257" scrolltop="-3934" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="21294" y="12869" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                <font>
+                  <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+                </font>
+                <mouseicon>
+                  <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                </mouseicon>
+              </diagram>
+              <layoutmanager>
+                <ddsxmlobj />
+              </layoutmanager>
+              <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Inspection_Results_dataMining" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4741" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                <control>
+                  <ddsxmlobjectstreaminitwrapper binary="000e00008512000088130000" />
+                </control>
+                <layoutobject>
+                  <ddsxmlobj>
+                    <property name="LogicalObject" value="dbo_Inspection_Results_dataMining" vartype="8" />
+                  </ddsxmlobj>
+                </layoutobject>
+                <shape groupshapeid="0" groupnode="0" />
+              </ddscontrol>
+            </dds>
+          </Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+          <Value>false</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+          <Value>-8257</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+          <Value>-3934</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+          <Value>20</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+          <Value>0</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+          <Value>100</Value>
+        </Annotation>
+      </Annotations>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Source xsi:type="DataSourceViewBinding">
+        <DataSourceViewID>Datamining</DataSourceViewID>
+      </Source>
+      <Columns>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>ACTION</ID>
+          <Name>ACTION</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>150</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>ACTION</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>BORO</ID>
+          <Name>BORO</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>500</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>BORO</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>BUILDING</ID>
+          <Name>BUILDING</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>500</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>BUILDING</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>CAMIS</ID>
+          <Name>CAMIS</Name>
+          <IsKey>true</IsKey>
+          <Type>Long</Type>
+          <Content>Key</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Integer</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>CAMIS</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>CRITICAL FLAG</ID>
+          <Name>CRITICAL FLAG</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>CRITICAL_FLAG</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>CUISINE DESCRIPTION</ID>
+          <Name>CUISINE DESCRIPTION</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>1000</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>CUISINE_DESCRIPTION</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>DBA</ID>
+          <Name>DBA</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>100</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>DBA</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>GRADE</ID>
+          <Name>GRADE</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>50</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>GRADE</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>GRADE DATE</ID>
+          <Name>GRADE DATE</Name>
+          <Type>Date</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Date</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>GRADE_DATE</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>INSPECTION DATE</ID>
+          <Name>INSPECTION DATE</Name>
+          <Type>Date</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Date</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>INSPECTION_DATE</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>INSPECTION TYPE</ID>
+          <Name>INSPECTION TYPE</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>500</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>INSPECTION_TYPE</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>SCORE</ID>
+          <Name>SCORE</Name>
+          <Type>Double</Type>
+          <Content>Continuous</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>Double</DataType>
+              <DataSize>-1</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>SCORE</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>STREET</ID>
+          <Name>STREET</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>500</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>STREET</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+        <Column xsi:type="ScalarMiningStructureColumn">
+          <ID>VIOLATION DESCRIPTION</ID>
+          <Name>VIOLATION DESCRIPTION</Name>
+          <Type>Text</Type>
+          <Content>Discrete</Content>
+          <KeyColumns>
+            <KeyColumn>
+              <DataType>WChar</DataType>
+              <DataSize>1000</DataSize>
+              <Source xsi:type="ColumnBinding">
+                <TableID>dbo_Inspection_Results_dataMining</TableID>
+                <ColumnID>VIOLATION_DESCRIPTION</ColumnID>
+              </Source>
+            </KeyColumn>
+          </KeyColumns>
+        </Column>
+      </Columns>
+      <MiningModels>
+        <MiningModel>
+          <ID>Inspection Results Data Mining</ID>
+          <Name>Inspection Results Data Mining</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Decision_Trees</Algorithm>
+          <Columns>
+            <Column>
+              <ID>ACTION</ID>
+              <Name>ACTION</Name>
+              <SourceColumnID>ACTION</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>BORO</ID>
+              <Name>BORO</Name>
+              <SourceColumnID>BORO</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>BUILDING</ID>
+              <Name>BUILDING</Name>
+              <SourceColumnID>BUILDING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>CAMIS</ID>
+              <Name>CAMIS</Name>
+              <SourceColumnID>CAMIS</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>CRITICAL FLAG</ID>
+              <Name>CRITICAL FLAG</Name>
+              <SourceColumnID>CRITICAL FLAG</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>CUISINE DESCRIPTION</ID>
+              <Name>CUISINE DESCRIPTION</Name>
+              <SourceColumnID>CUISINE DESCRIPTION</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>DBA</ID>
+              <Name>DBA</Name>
+              <SourceColumnID>DBA</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>GRADE</ID>
+              <Name>GRADE</Name>
+              <SourceColumnID>GRADE</SourceColumnID>
+              <Usage>Predict</Usage>
+            </Column>
+            <Column>
+              <ID>GRADE DATE</ID>
+              <Name>GRADE DATE</Name>
+              <SourceColumnID>GRADE DATE</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>INSPECTION DATE</ID>
+              <Name>INSPECTION DATE</Name>
+              <SourceColumnID>INSPECTION DATE</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>INSPECTION TYPE</ID>
+              <Name>INSPECTION TYPE</Name>
+              <SourceColumnID>INSPECTION TYPE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>SCORE</ID>
+              <Name>SCORE</Name>
+              <SourceColumnID>SCORE</SourceColumnID>
+              <ModelingFlags>
+                <ModelingFlag>REGRESSOR</ModelingFlag>
+              </ModelingFlags>
+            </Column>
+            <Column>
+              <ID>STREET</ID>
+              <Name>STREET</Name>
+              <SourceColumnID>STREET</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>VIOLATION DESCRIPTION</ID>
+              <Name>VIOLATION DESCRIPTION</Name>
+              <SourceColumnID>VIOLATION DESCRIPTION</SourceColumnID>
+            </Column>
+          </Columns>
+        </MiningModel>
+        <MiningModel>
+          <ID>Clustering</ID>
+          <Name>Clustering</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Clustering</Algorithm>
+          <Columns>
+            <Column>
+              <ID>ACTION</ID>
+              <Name>ACTION</Name>
+              <SourceColumnID>ACTION</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>BORO</ID>
+              <Name>BORO</Name>
+              <SourceColumnID>BORO</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>BUILDING</ID>
+              <Name>BUILDING</Name>
+              <SourceColumnID>BUILDING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>CAMIS</ID>
+              <Name>CAMIS</Name>
+              <SourceColumnID>CAMIS</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>CRITICAL FLAG</ID>
+              <Name>CRITICAL FLAG</Name>
+              <SourceColumnID>CRITICAL FLAG</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>CUISINE DESCRIPTION</ID>
+              <Name>CUISINE DESCRIPTION</Name>
+              <SourceColumnID>CUISINE DESCRIPTION</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>DBA</ID>
+              <Name>DBA</Name>
+              <SourceColumnID>DBA</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>GRADE</ID>
+              <Name>GRADE</Name>
+              <SourceColumnID>GRADE</SourceColumnID>
+              <Usage>Predict</Usage>
+            </Column>
+            <Column>
+              <ID>GRADE DATE</ID>
+              <Name>GRADE DATE</Name>
+              <SourceColumnID>GRADE DATE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>INSPECTION DATE</ID>
+              <Name>INSPECTION DATE</Name>
+              <SourceColumnID>INSPECTION DATE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>INSPECTION TYPE</ID>
+              <Name>INSPECTION TYPE</Name>
+              <SourceColumnID>INSPECTION TYPE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>SCORE</ID>
+              <Name>SCORE</Name>
+              <SourceColumnID>SCORE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>STREET</ID>
+              <Name>STREET</Name>
+              <SourceColumnID>STREET</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>VIOLATION DESCRIPTION</ID>
+              <Name>VIOLATION DESCRIPTION</Name>
+              <SourceColumnID>VIOLATION DESCRIPTION</SourceColumnID>
+            </Column>
+          </Columns>
+        </MiningModel>
+        <MiningModel>
+          <ID>Naive_bayes</ID>
+          <Name>Naive_bayes</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Algorithm>Microsoft_Naive_Bayes</Algorithm>
+          <Columns>
+            <Column>
+              <ID>ACTION</ID>
+              <Name>ACTION</Name>
+              <SourceColumnID>ACTION</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>BORO</ID>
+              <Name>BORO</Name>
+              <SourceColumnID>BORO</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>BUILDING</ID>
+              <Name>BUILDING</Name>
+              <SourceColumnID>BUILDING</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>CAMIS</ID>
+              <Name>CAMIS</Name>
+              <SourceColumnID>CAMIS</SourceColumnID>
+              <Usage>Key</Usage>
+            </Column>
+            <Column>
+              <ID>CRITICAL FLAG</ID>
+              <Name>CRITICAL FLAG</Name>
+              <SourceColumnID>CRITICAL FLAG</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>CUISINE DESCRIPTION</ID>
+              <Name>CUISINE DESCRIPTION</Name>
+              <SourceColumnID>CUISINE DESCRIPTION</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>DBA</ID>
+              <Name>DBA</Name>
+              <SourceColumnID>DBA</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>GRADE</ID>
+              <Name>GRADE</Name>
+              <SourceColumnID>GRADE</SourceColumnID>
+              <Usage>Predict</Usage>
+            </Column>
+            <Column>
+              <ID>INSPECTION TYPE</ID>
+              <Name>INSPECTION TYPE</Name>
+              <SourceColumnID>INSPECTION TYPE</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>STREET</ID>
+              <Name>STREET</Name>
+              <SourceColumnID>STREET</SourceColumnID>
+            </Column>
+            <Column>
+              <ID>VIOLATION DESCRIPTION</ID>
+              <Name>VIOLATION DESCRIPTION</Name>
+              <SourceColumnID>VIOLATION DESCRIPTION</SourceColumnID>
+            </Column>
+          </Columns>
+        </MiningModel>
+      </MiningModels>
+      <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+    </MiningStructure>
+  </MiningStructures>
+  <DataSources>
+    <DataSource xsi:type="RelationalDataSource">
+      <ID>Datamining</ID>
+      <Name>Datamining</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <ConnectionString>Provider=SQLNCLI11.1;Data Source=DESKTOP-4I86IIQ;Integrated Security=SSPI;Initial Catalog=datamining</ConnectionString>
+      <ConnectionStringSecurity>Unchanged</ConnectionStringSecurity>
+      <ImpersonationInfo>
+        <ImpersonationMode>ImpersonateServiceAccount</ImpersonationMode>
+        <ImpersonationInfoSecurity>Unchanged</ImpersonationInfoSecurity>
+      </ImpersonationInfo>
+      <Timeout>PT0S</Timeout>
+    </DataSource>
+  </DataSources>
+  <DataSourceViews>
+    <DataSourceView>
+      <ID>Datamining</ID>
+      <Name>Datamining</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Annotations>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+          <Value>_ALL_TABLES_</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+          <Value>true</Value>
+        </Annotation>
+        <Annotation>
+          <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+          <Value>
+            <Layouts xmlns="">
+              <Diagram>
+                <Name>_ALL_TABLES_</Name>
+                <DiagramLayout />
+                <ShowRelationshipNames>False</ShowRelationshipNames>
+                <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+                <DiagramViewPortLeft>0</DiagramViewPortLeft>
+                <DiagramViewPortTop>0</DiagramViewPortTop>
+                <DiagramBoundingLeft>0</DiagramBoundingLeft>
+                <DiagramBoundingTop>0</DiagramBoundingTop>
+                <DiagramZoom>100</DiagramZoom>
+              </Diagram>
+            </Layouts>
+          </Value>
+        </Annotation>
+      </Annotations>
+      <DataSourceID>Datamining</DataSourceID>
+      <Schema>
+        <xs:schema id="Datamining" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+          <xs:element name="Datamining" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="80ad50e5-1ced-4503-89d3-ef4ae3a41a8f">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="dbo_Inspection_Results_dataMining" msprop:design-time-name="9cf2e219-826e-410d-bcbf-546a1f7db0f7" msprop:FriendlyName="Inspection_Results_dataMining" msprop:DbSchemaName="dbo" msprop:DbTableName="Inspection_Results_dataMining" msprop:TableType="Table">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="column1" msprop:design-time-name="5bc57d42-f4d6-48f2-83e6-bddba79ddb06" msprop:DbColumnName="column1" msprop:FriendlyName="column1" type="xs:int" minOccurs="0" />
+                      <xs:element name="Unnamed_0" msprop:design-time-name="453583f9-f906-43fe-8fa9-704e92e576e8" msprop:DbColumnName="Unnamed_0" msprop:FriendlyName="Unnamed_0" type="xs:int" minOccurs="0" />
+                      <xs:element name="CAMIS" msprop:design-time-name="8f0f7e48-a772-41eb-9134-f575915c68c0" msprop:DbColumnName="CAMIS" msprop:FriendlyName="CAMIS" type="xs:int" minOccurs="0" />
+                      <xs:element name="DBA" msprop:design-time-name="ec402db2-9dba-4ac0-a9a9-b2b8a0b17be5" msprop:DbColumnName="DBA" msprop:FriendlyName="DBA" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="100" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="BORO" msprop:design-time-name="914c67f9-961c-4535-8538-f76ccd338646" msprop:DbColumnName="BORO" msprop:FriendlyName="BORO" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="500" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="BUILDING" msprop:design-time-name="d96754e6-305d-46ee-8c62-fa82960997c0" msprop:DbColumnName="BUILDING" msprop:FriendlyName="BUILDING" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="500" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="STREET" msprop:design-time-name="cab8012c-7bc6-46db-81fe-67df59524382" msprop:DbColumnName="STREET" msprop:FriendlyName="STREET" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="500" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="ZIPCODE" msprop:design-time-name="c1f99399-8a06-4b7e-9503-60c1f29f6250" msprop:DbColumnName="ZIPCODE" msprop:FriendlyName="ZIPCODE" type="xs:double" minOccurs="0" />
+                      <xs:element name="PHONE" msprop:design-time-name="868a75b2-6f0f-4fd7-81a7-9c05720f3011" msprop:DbColumnName="PHONE" msprop:FriendlyName="PHONE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="CUISINE_DESCRIPTION" msprop:design-time-name="9281e583-4837-4879-8b6d-84abb446448d" msprop:DbColumnName="CUISINE_DESCRIPTION" msprop:FriendlyName="CUISINE_DESCRIPTION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="1000" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="INSPECTION_DATE" msprop:design-time-name="2020a19b-ae1c-402e-ba4d-85113c32ff8d" msprop:DbColumnName="INSPECTION_DATE" msprop:FriendlyName="INSPECTION_DATE" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="ACTION" msprop:design-time-name="0715bb4b-a53e-4f13-8801-f0c30bf68eea" msprop:DbColumnName="ACTION" msprop:FriendlyName="ACTION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="150" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="VIOLATION_CODE" msprop:design-time-name="286af4f0-3170-4355-bffd-457c54a8d8ab" msprop:DbColumnName="VIOLATION_CODE" msprop:FriendlyName="VIOLATION_CODE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="VIOLATION_DESCRIPTION" msprop:design-time-name="3f0be81e-f7e3-4c9e-8b64-18208a5224ea" msprop:DbColumnName="VIOLATION_DESCRIPTION" msprop:FriendlyName="VIOLATION_DESCRIPTION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="1000" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="CRITICAL_FLAG" msprop:design-time-name="1c1a2853-6b84-4542-bdec-f0ec4c1d5bc3" msprop:DbColumnName="CRITICAL_FLAG" msprop:FriendlyName="CRITICAL_FLAG" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="SCORE" msprop:design-time-name="8fa8fee6-16bf-4c97-911f-a4e60d50a7f2" msprop:DbColumnName="SCORE" msprop:FriendlyName="SCORE" type="xs:double" minOccurs="0" />
+                      <xs:element name="GRADE" msprop:design-time-name="eb1c743e-6d27-4a4e-9473-4d3464287d97" msprop:DbColumnName="GRADE" msprop:FriendlyName="GRADE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="GRADE_DATE" msprop:design-time-name="4b8208a3-05da-43a4-b815-6bda3157d4b1" msprop:DbColumnName="GRADE_DATE" msprop:FriendlyName="GRADE_DATE" type="xs:dateTime" minOccurs="0" />
+                      <xs:element name="INSPECTION_TYPE" msprop:design-time-name="364c344b-24bb-404c-a9b8-37b0c37b1736" msprop:DbColumnName="INSPECTION_TYPE" msprop:FriendlyName="INSPECTION_TYPE" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="500" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="ID_GRADE" msprop:design-time-name="4ab8c7e1-aa61-44b0-8fce-29aa118e993f" msprop:DbColumnName="ID_GRADE" msprop:FriendlyName="ID_GRADE" type="xs:int" minOccurs="0" />
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:complexType>
+          </xs:element>
+        </xs:schema>
+        <Datamining xmlns="" />
+      </Schema>
+    </DataSourceView>
+  </DataSourceViews>
+</Database>

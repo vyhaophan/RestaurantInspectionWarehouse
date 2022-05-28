@@ -1,0 +1,551 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e3997649-75b4-48c2-8f80-05218059fffd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Inspection Results Data Mining</ID>
+  <Name>Inspection Results Data Mining</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CaseTableName</Name>
+      <Value>dbo_Inspection_Results_dataMining</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-8257" scrolltop="-3934" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="21294" y="12869" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Inspection_Results_dataMining" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4741" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008512000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Inspection_Results_dataMining" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-8257</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3934</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b0ba0427-5ffe-4bc6-88fa-f2e710e30e83">
+    <DataSourceViewID>Datamining</DataSourceViewID>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0970ba8a-f240-47ff-bd9c-8c871cfcd652">
+      <ID>ACTION</ID>
+      <Name>ACTION</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2b39b610-d3a7-4797-8371-fced5668335a">
+          <DataType>WChar</DataType>
+          <DataSize>150</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b0fa16c-fe46-4178-92e9-3ce9fbf8b365">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>ACTION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b75ee767-d3ff-4dae-aff4-177aa0ff0eaf">
+      <ID>BORO</ID>
+      <Name>BORO</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9cfe7c4c-89ff-4213-bb56-648dd2d0c273">
+          <DataType>WChar</DataType>
+          <DataSize>500</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="08f7fe78-b446-441d-8f42-a2158846e61b">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>BORO</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e9352769-6afe-4140-92f8-86388850c985">
+      <ID>BUILDING</ID>
+      <Name>BUILDING</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4f95a678-df5f-448f-aef1-1a1d013dd0e1">
+          <DataType>WChar</DataType>
+          <DataSize>500</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46bc42df-4b33-4c76-8084-7eb8134e2d0e">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>BUILDING</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="04220d59-6750-4c02-b702-aa024dc2b3b5">
+      <ID>CAMIS</ID>
+      <Name>CAMIS</Name>
+      <IsKey>true</IsKey>
+      <Type>Long</Type>
+      <Content>Key</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="04a8c63d-ab40-4eda-a273-b36fad4a09f5">
+          <DataType>Integer</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="81edb750-9125-465a-ab43-59e3ac2bd582">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>CAMIS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e2cdd108-eea7-4fc9-9210-bc98e34c8f49">
+      <ID>CRITICAL FLAG</ID>
+      <Name>CRITICAL FLAG</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9da5ab3c-dc30-45bc-b7ff-2c676adcc77e">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f3a4d087-f012-48b8-8cbd-59e2cfa447d7">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>CRITICAL_FLAG</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="09f7d173-faa3-47ac-bc12-cef7b287e877">
+      <ID>CUISINE DESCRIPTION</ID>
+      <Name>CUISINE DESCRIPTION</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="794ec61a-7a0c-48cb-ac73-729465c9201f">
+          <DataType>WChar</DataType>
+          <DataSize>1000</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="7fd815b8-9f85-4090-a816-2500279f375e">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>CUISINE_DESCRIPTION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="4fa9a851-a7df-4ca7-870e-75a368b03314">
+      <ID>DBA</ID>
+      <Name>DBA</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b7fcf505-4d11-47db-a249-aba9157b058b">
+          <DataType>WChar</DataType>
+          <DataSize>100</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3401ac9d-ba74-4be5-a1b8-328f115b4cd1">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>DBA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="b406ec77-b210-4935-8d26-fb6d7676441b">
+      <ID>GRADE</ID>
+      <Name>GRADE</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ad988f5b-f30f-43f6-aaf6-f74138c19d4c">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="06d37a7c-adde-4be5-811b-444efe1d511e">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>GRADE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="966d49ae-09c6-4fda-9daa-4cbcb0b2a29e">
+      <ID>GRADE DATE</ID>
+      <Name>GRADE DATE</Name>
+      <Type>Date</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bd99cc7f-9b45-4fa4-97c3-c4c6e9e46837">
+          <DataType>Date</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f65dfabf-4e88-43d9-9049-e777bf089592">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>GRADE_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="69cc4b8f-17c6-417f-ad96-01c2b9f50a5f">
+      <ID>INSPECTION DATE</ID>
+      <Name>INSPECTION DATE</Name>
+      <Type>Date</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="8ce800bd-ad7b-4483-a5f3-e06fdc40512e">
+          <DataType>Date</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="95b8ea96-1f37-410b-8103-4ea23af67eca">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>INSPECTION_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="0dec839f-f4d5-4319-b3a2-8414ebabf969">
+      <ID>INSPECTION TYPE</ID>
+      <Name>INSPECTION TYPE</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="61649a45-50f5-4c44-bb9c-2fb12b643591">
+          <DataType>WChar</DataType>
+          <DataSize>500</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1000018d-996b-4cc3-959e-a023f2f57719">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>INSPECTION_TYPE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="fdd5b7fd-de01-41a5-8b43-265211f84538">
+      <ID>SCORE</ID>
+      <Name>SCORE</Name>
+      <Type>Double</Type>
+      <Content>Continuous</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9834d535-489e-40a7-b2d6-251a72e86e48">
+          <DataType>Double</DataType>
+          <DataSize>-1</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d77564de-6dd5-426a-adea-47eabdf30797">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>SCORE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="84e737ba-3621-453c-9b9b-5587e376bd8a">
+      <ID>STREET</ID>
+      <Name>STREET</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bed11111-e192-4a50-b587-22fff1e9892c">
+          <DataType>WChar</DataType>
+          <DataSize>500</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="32c163fd-bcc0-40e8-8d38-dfa8cd5ad42f">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>STREET</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="e5f54953-9a10-421e-bf69-50e65d50b24a">
+      <ID>VIOLATION DESCRIPTION</ID>
+      <Name>VIOLATION DESCRIPTION</Name>
+      <Type>Text</Type>
+      <Content>Discrete</Content>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="afd1c4bd-727b-403a-993e-85746461c112">
+          <DataType>WChar</DataType>
+          <DataSize>1000</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="75073a47-9e4f-4fcd-be64-bec9a0a6fb80">
+            <TableID>dbo_Inspection_Results_dataMining</TableID>
+            <ColumnID>VIOLATION_DESCRIPTION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="ae7adc0c-5d0a-41ba-a9f5-4b271c2d988f">
+      <ID>Inspection Results Data Mining</ID>
+      <Name>Inspection Results Data Mining</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Decision_Trees</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="d7bcd8a2-08c4-4776-a1ba-702417456da6">
+          <ID>ACTION</ID>
+          <Name>ACTION</Name>
+          <SourceColumnID>ACTION</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="76bf0433-9b9c-498b-9815-db16b860196b">
+          <ID>BORO</ID>
+          <Name>BORO</Name>
+          <SourceColumnID>BORO</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="7d5cc641-14b4-473e-81e2-a7b70d4f9c0e">
+          <ID>BUILDING</ID>
+          <Name>BUILDING</Name>
+          <SourceColumnID>BUILDING</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9815c271-0a92-45fe-a16d-2dc089aab924">
+          <ID>CAMIS</ID>
+          <Name>CAMIS</Name>
+          <SourceColumnID>CAMIS</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="448aa0a4-0959-4fdb-9bcd-1a43d3d3f67b">
+          <ID>CRITICAL FLAG</ID>
+          <Name>CRITICAL FLAG</Name>
+          <SourceColumnID>CRITICAL FLAG</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d11e37d9-6b50-43b7-91d5-394aaef823ff">
+          <ID>CUISINE DESCRIPTION</ID>
+          <Name>CUISINE DESCRIPTION</Name>
+          <SourceColumnID>CUISINE DESCRIPTION</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e5efa003-6985-49d5-95f8-d5e3dbb201c5">
+          <ID>DBA</ID>
+          <Name>DBA</Name>
+          <SourceColumnID>DBA</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="9488e3b3-926c-4de0-9f27-494d20a65627">
+          <ID>GRADE</ID>
+          <Name>GRADE</Name>
+          <SourceColumnID>GRADE</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="e80c7537-6cd1-4f33-a2a6-fcac5ca9572f">
+          <ID>GRADE DATE</ID>
+          <Name>GRADE DATE</Name>
+          <SourceColumnID>GRADE DATE</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="934d2db3-99b8-406f-9df2-049aa0ad8c51">
+          <ID>INSPECTION DATE</ID>
+          <Name>INSPECTION DATE</Name>
+          <SourceColumnID>INSPECTION DATE</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="3040ec78-46b5-4586-a839-17054ae124b8">
+          <ID>INSPECTION TYPE</ID>
+          <Name>INSPECTION TYPE</Name>
+          <SourceColumnID>INSPECTION TYPE</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="ecd36948-8a54-4a57-aa96-3e2cd6708514">
+          <ID>SCORE</ID>
+          <Name>SCORE</Name>
+          <SourceColumnID>SCORE</SourceColumnID>
+          <ModelingFlags>
+            <ModelingFlag>REGRESSOR</ModelingFlag>
+          </ModelingFlags>
+        </Column>
+        <Column dwd:design-time-name="fd5895e8-23a3-42d6-923c-1767924713cb">
+          <ID>STREET</ID>
+          <Name>STREET</Name>
+          <SourceColumnID>STREET</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4144e2e2-8eb8-4450-bebc-e2f1a262e246">
+          <ID>VIOLATION DESCRIPTION</ID>
+          <Name>VIOLATION DESCRIPTION</Name>
+          <SourceColumnID>VIOLATION DESCRIPTION</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="c7143109-6967-414b-b660-f78f2981b840">
+      <ID>Clustering</ID>
+      <Name>Clustering</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="793785d6-e3ca-4adb-9d15-5f51e47c48b9">
+          <ID>ACTION</ID>
+          <Name>ACTION</Name>
+          <SourceColumnID>ACTION</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="aac8434b-ef7a-45e0-8931-78d0fa8cbe6b">
+          <ID>BORO</ID>
+          <Name>BORO</Name>
+          <SourceColumnID>BORO</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="160a17d4-a115-404a-a1f0-8cb6490126b8">
+          <ID>BUILDING</ID>
+          <Name>BUILDING</Name>
+          <SourceColumnID>BUILDING</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="eeae2c11-cb55-44e2-8449-d5c8102beb30">
+          <ID>CAMIS</ID>
+          <Name>CAMIS</Name>
+          <SourceColumnID>CAMIS</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="4cca8b06-57b9-4467-9728-23ca6dbdb420">
+          <ID>CRITICAL FLAG</ID>
+          <Name>CRITICAL FLAG</Name>
+          <SourceColumnID>CRITICAL FLAG</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="e77b4a14-65c1-43cd-b12e-82415a95a389">
+          <ID>CUISINE DESCRIPTION</ID>
+          <Name>CUISINE DESCRIPTION</Name>
+          <SourceColumnID>CUISINE DESCRIPTION</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d0f1fd5e-f913-4490-8473-1a8a7c39a0c4">
+          <ID>DBA</ID>
+          <Name>DBA</Name>
+          <SourceColumnID>DBA</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f83dba62-f235-423f-8cba-fd3b5b356175">
+          <ID>GRADE</ID>
+          <Name>GRADE</Name>
+          <SourceColumnID>GRADE</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="8cc20579-cf77-4f45-99fc-5a4a4ea971e4">
+          <ID>GRADE DATE</ID>
+          <Name>GRADE DATE</Name>
+          <SourceColumnID>GRADE DATE</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="d3471604-5f8b-4b19-921f-3206c7c701f5">
+          <ID>INSPECTION DATE</ID>
+          <Name>INSPECTION DATE</Name>
+          <SourceColumnID>INSPECTION DATE</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="57f70b4d-3586-4fc5-baef-ec4027a49c02">
+          <ID>INSPECTION TYPE</ID>
+          <Name>INSPECTION TYPE</Name>
+          <SourceColumnID>INSPECTION TYPE</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="103111da-1114-4c0a-8ec8-7cfe998f1c29">
+          <ID>SCORE</ID>
+          <Name>SCORE</Name>
+          <SourceColumnID>SCORE</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="776077a5-16ff-4857-ab46-17d854280c2d">
+          <ID>STREET</ID>
+          <Name>STREET</Name>
+          <SourceColumnID>STREET</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="38669059-592b-4b85-a18e-cba853ee8866">
+          <ID>VIOLATION DESCRIPTION</ID>
+          <Name>VIOLATION DESCRIPTION</Name>
+          <SourceColumnID>VIOLATION DESCRIPTION</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+    <MiningModel dwd:design-time-name="55ddeac9-3687-41f8-9cd2-0abe23291b75">
+      <ID>Naive_bayes</ID>
+      <Name>Naive_bayes</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Naive_Bayes</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="d5b58f6a-8640-4f5e-938a-6213554b5de1">
+          <ID>ACTION</ID>
+          <Name>ACTION</Name>
+          <SourceColumnID>ACTION</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="db4161e4-165b-4165-917c-1bef185dc2e0">
+          <ID>BORO</ID>
+          <Name>BORO</Name>
+          <SourceColumnID>BORO</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="6878bcf3-1779-4898-b87d-ff3fd72ec8e6">
+          <ID>BUILDING</ID>
+          <Name>BUILDING</Name>
+          <SourceColumnID>BUILDING</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="4b424c12-2b60-4452-a0f2-b16e6059b997">
+          <ID>CAMIS</ID>
+          <Name>CAMIS</Name>
+          <SourceColumnID>CAMIS</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="b54e5bbe-e97f-453a-8499-a37c41ed5c3a">
+          <ID>CRITICAL FLAG</ID>
+          <Name>CRITICAL FLAG</Name>
+          <SourceColumnID>CRITICAL FLAG</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c96a4593-5405-428f-842e-9ca7fb8c53d6">
+          <ID>CUISINE DESCRIPTION</ID>
+          <Name>CUISINE DESCRIPTION</Name>
+          <SourceColumnID>CUISINE DESCRIPTION</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="c24ecdda-b074-4c43-b772-f1475317eb1d">
+          <ID>DBA</ID>
+          <Name>DBA</Name>
+          <SourceColumnID>DBA</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="386c5873-3b71-4c62-b5a6-8defe1fc8bfd">
+          <ID>GRADE</ID>
+          <Name>GRADE</Name>
+          <SourceColumnID>GRADE</SourceColumnID>
+          <Usage>Predict</Usage>
+        </Column>
+        <Column dwd:design-time-name="69c9fd57-285b-4052-9b34-3b36b51cd07a">
+          <ID>INSPECTION TYPE</ID>
+          <Name>INSPECTION TYPE</Name>
+          <SourceColumnID>INSPECTION TYPE</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="658509b5-a3cc-4bb4-8ea1-33998f0ad296">
+          <ID>STREET</ID>
+          <Name>STREET</Name>
+          <SourceColumnID>STREET</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="71340bf6-013d-48d6-aad8-63fa73b1725f">
+          <ID>VIOLATION DESCRIPTION</ID>
+          <Name>VIOLATION DESCRIPTION</Name>
+          <SourceColumnID>VIOLATION DESCRIPTION</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+  <ddl100_100:HoldoutMaxPercent>30</ddl100_100:HoldoutMaxPercent>
+</MiningStructure>

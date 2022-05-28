@@ -1,0 +1,152 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8cafb46e-2b24-44b7-9ccc-765cee4aaade" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Datamining</ID>
+  <Name>Datamining</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Datamining</DataSourceID>
+  <Schema>
+    <xs:schema id="Datamining" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Datamining" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="80ad50e5-1ced-4503-89d3-ef4ae3a41a8f">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Inspection_Results_dataMining" msprop:design-time-name="9cf2e219-826e-410d-bcbf-546a1f7db0f7" msprop:DbTableName="Inspection_Results_dataMining" msprop:FriendlyName="Inspection_Results_dataMining" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="column1" msprop:design-time-name="5bc57d42-f4d6-48f2-83e6-bddba79ddb06" msprop:DbColumnName="column1" msprop:FriendlyName="column1" type="xs:int" minOccurs="0" />
+                  <xs:element name="Unnamed_0" msprop:design-time-name="453583f9-f906-43fe-8fa9-704e92e576e8" msprop:DbColumnName="Unnamed_0" msprop:FriendlyName="Unnamed_0" type="xs:int" minOccurs="0" />
+                  <xs:element name="CAMIS" msprop:design-time-name="8f0f7e48-a772-41eb-9134-f575915c68c0" msprop:DbColumnName="CAMIS" msprop:FriendlyName="CAMIS" type="xs:int" minOccurs="0" />
+                  <xs:element name="DBA" msprop:design-time-name="ec402db2-9dba-4ac0-a9a9-b2b8a0b17be5" msprop:DbColumnName="DBA" msprop:FriendlyName="DBA" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BORO" msprop:design-time-name="914c67f9-961c-4535-8538-f76ccd338646" msprop:DbColumnName="BORO" msprop:FriendlyName="BORO" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BUILDING" msprop:design-time-name="d96754e6-305d-46ee-8c62-fa82960997c0" msprop:DbColumnName="BUILDING" msprop:FriendlyName="BUILDING" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="STREET" msprop:design-time-name="cab8012c-7bc6-46db-81fe-67df59524382" msprop:DbColumnName="STREET" msprop:FriendlyName="STREET" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ZIPCODE" msprop:design-time-name="c1f99399-8a06-4b7e-9503-60c1f29f6250" msprop:DbColumnName="ZIPCODE" msprop:FriendlyName="ZIPCODE" type="xs:double" minOccurs="0" />
+                  <xs:element name="PHONE" msprop:design-time-name="868a75b2-6f0f-4fd7-81a7-9c05720f3011" msprop:DbColumnName="PHONE" msprop:FriendlyName="PHONE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CUISINE_DESCRIPTION" msprop:design-time-name="9281e583-4837-4879-8b6d-84abb446448d" msprop:DbColumnName="CUISINE_DESCRIPTION" msprop:FriendlyName="CUISINE_DESCRIPTION" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="INSPECTION_DATE" msprop:design-time-name="2020a19b-ae1c-402e-ba4d-85113c32ff8d" msprop:DbColumnName="INSPECTION_DATE" msprop:FriendlyName="INSPECTION_DATE" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ACTION" msprop:design-time-name="0715bb4b-a53e-4f13-8801-f0c30bf68eea" msprop:DbColumnName="ACTION" msprop:FriendlyName="ACTION" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="150" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="VIOLATION_CODE" msprop:design-time-name="286af4f0-3170-4355-bffd-457c54a8d8ab" msprop:DbColumnName="VIOLATION_CODE" msprop:FriendlyName="VIOLATION_CODE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="VIOLATION_DESCRIPTION" msprop:design-time-name="3f0be81e-f7e3-4c9e-8b64-18208a5224ea" msprop:DbColumnName="VIOLATION_DESCRIPTION" msprop:FriendlyName="VIOLATION_DESCRIPTION" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CRITICAL_FLAG" msprop:design-time-name="1c1a2853-6b84-4542-bdec-f0ec4c1d5bc3" msprop:DbColumnName="CRITICAL_FLAG" msprop:FriendlyName="CRITICAL_FLAG" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="SCORE" msprop:design-time-name="8fa8fee6-16bf-4c97-911f-a4e60d50a7f2" msprop:DbColumnName="SCORE" msprop:FriendlyName="SCORE" type="xs:double" minOccurs="0" />
+                  <xs:element name="GRADE" msprop:design-time-name="eb1c743e-6d27-4a4e-9473-4d3464287d97" msprop:DbColumnName="GRADE" msprop:FriendlyName="GRADE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="GRADE_DATE" msprop:design-time-name="4b8208a3-05da-43a4-b815-6bda3157d4b1" msprop:DbColumnName="GRADE_DATE" msprop:FriendlyName="GRADE_DATE" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="INSPECTION_TYPE" msprop:design-time-name="364c344b-24bb-404c-a9b8-37b0c37b1736" msprop:DbColumnName="INSPECTION_TYPE" msprop:FriendlyName="INSPECTION_TYPE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ID_GRADE" msprop:design-time-name="4ab8c7e1-aa61-44b0-8fce-29aa118e993f" msprop:DbColumnName="ID_GRADE" msprop:FriendlyName="ID_GRADE" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <Datamining xmlns="" />
+  </Schema>
+</DataSourceView>
