@@ -1,0 +1,245 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0eaa72cf-3b05-41a4-9869-f2bfdb3a11cd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>FACT INSPECT</ID>
+  <Name>FACT INSPECT</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1232" scrolltop="-2338" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="6227" y="8326" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="FACT_INSPECT" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3722" height="3651" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008a0e0000430e0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FACT_INSPECT" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1232</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2338</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="a8f9df01-5744-4657-bf90-f523599aadee">
+    <DataSourceViewID>DW INSPECTION</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="b81545d4-b097-4870-b4b0-b99968e67d86">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="be8ade1c-f5d2-46a1-8e8f-36259a142c9a">
+      <ID>ID FACT</ID>
+      <Name>ID FACT</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="44df0a2f-843f-488e-bae8-279b9cd4acc3">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="81c7491b-790c-4bf2-a743-85f5b6a7a683">
+            <TableID>dbo_FACT_INSPECT</TableID>
+            <ColumnID>ID_FACT</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="4a91c7f7-cac0-47e2-aa2c-9538fce73660">
+          <AttributeID>ID GRADE</AttributeID>
+          <Name>ID GRADE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6461a500-5256-4d6d-be0b-a447772bc598">
+          <AttributeID>INSPECTION DATE</AttributeID>
+          <Name>INSPECTION DATE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="70616798-ff50-4d5b-88f7-112bd4a4d3c7">
+          <AttributeID>VIOLATION CODE</AttributeID>
+          <Name>VIOLATION CODE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="86f643c1-1a98-42fd-a0bf-4e2e4f1833d8">
+          <AttributeID>CAMIS</AttributeID>
+          <Name>CAMIS</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c02de876-c731-4ac3-99c2-9fa2c89fba07">
+          <AttributeID>INSPECTION TYPE</AttributeID>
+          <Name>INSPECTION TYPE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b1ef466c-e138-4bfd-a22a-dbc429d83428">
+          <AttributeID>SCORE</AttributeID>
+          <Name>SCORE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9575b530-7234-457b-b939-67bbfce1c28f">
+          <AttributeID>ACTION</AttributeID>
+          <Name>ACTION</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="efbfc247-838a-4292-bc95-78b4a6f28a46">
+      <ID>ID GRADE</ID>
+      <Name>ID GRADE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d05b6ec5-7199-433b-a306-a0bc2b606423">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="356b0e33-cc18-45ac-bebf-f689743b2b40">
+            <TableID>dbo_FACT_INSPECT</TableID>
+            <ColumnID>ID_GRADE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e264972d-c685-491f-bbe5-7a88017bf5b5">
+      <ID>INSPECTION DATE</ID>
+      <Name>INSPECTION DATE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c903dde4-2ccc-4c1e-b11d-1546bd0028e1">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="25c5b248-3211-4633-aae8-337c626655e6">
+            <TableID>dbo_FACT_INSPECT</TableID>
+            <ColumnID>INSPECTION_DATE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d93e0b1d-b355-4023-91de-5e186535eead">
+      <ID>VIOLATION CODE</ID>
+      <Name>VIOLATION CODE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="460ad199-06f0-4bda-9a03-f082290957a3">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e9170e01-fea7-40f0-bb9a-a41abd24b52a">
+            <TableID>dbo_FACT_INSPECT</TableID>
+            <ColumnID>VIOLATION_CODE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e368eb1e-6d73-46af-a811-1c21734eb6e9">
+      <ID>CAMIS</ID>
+      <Name>CAMIS</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e752f180-1fd9-4aea-a22e-48d6f87d3d42">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e09af1fa-60c1-433b-af48-8531d92bc467">
+            <TableID>dbo_FACT_INSPECT</TableID>
+            <ColumnID>CAMIS</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cf943e13-1fdd-43f6-b594-82848849fe71">
+      <ID>INSPECTION TYPE</ID>
+      <Name>INSPECTION TYPE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="038a11ec-e192-4bd4-ac16-974518066ff9">
+          <DataType>WChar</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="df0e7906-4fb2-40bd-8945-d708df431bb6">
+            <TableID>dbo_FACT_INSPECT</TableID>
+            <ColumnID>INSPECTION_TYPE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ac701310-e505-4dc2-8fe5-515f25e2f920">
+      <ID>SCORE</ID>
+      <Name>SCORE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="63268fa6-1e67-4400-a23a-589147429a57">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2834b68d-7560-4ffd-bdb7-b083ad7fe0c7">
+            <TableID>dbo_FACT_INSPECT</TableID>
+            <ColumnID>SCORE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="5efacbda-7e10-4b42-bdc7-05664ea274c2">
+      <ID>ACTION</ID>
+      <Name>ACTION</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ce932442-6adb-4738-9685-83efe2ed515f">
+          <DataType>WChar</DataType>
+          <DataSize>1000</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="1d9c6735-f68e-4308-bbe3-b7c73a0ca009">
+            <TableID>dbo_FACT_INSPECT</TableID>
+            <ColumnID>ACTION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

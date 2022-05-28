@@ -1,0 +1,105 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="11ad403e-63da-4a64-b896-d23773401062" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DW INSPECTION</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>FACT INSPECT</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="5abe66d7-13a0-41fa-b409-516f1495cb14">
+          <ID>FACT INSPECT</ID>
+          <Name>FACT INSPECT</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ee58079d-5fa1-4b04-9726-d3a354737bd5">
+            <DataSourceViewID>DW INSPECTION</DataSourceViewID>
+            <TableID>dbo_FACT_INSPECT</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM DATE</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="99334970-4746-4e94-9be0-94fee9ff9d98">
+          <ID>DIM DATE</ID>
+          <Name>DIM DATE</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d210ded7-f7fb-4bd7-b282-00689d03a065">
+            <DataSourceViewID>DW INSPECTION</DataSourceViewID>
+            <TableID>dbo_DIM_DATE</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM GRADING</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="130b7430-537f-4cb4-8826-3c3ae376f63b">
+          <ID>DIM GRADING</ID>
+          <Name>DIM GRADING</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1d8763f7-116d-4149-a5d3-10925e16e162">
+            <DataSourceViewID>DW INSPECTION</DataSourceViewID>
+            <TableID>dbo_DIM_GRADING</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM RESTAURANT</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e0c472ac-aafb-493b-92b8-04cec640bdf2">
+          <ID>DIM RESTAURANT</ID>
+          <Name>DIM RESTAURANT</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7aed5465-24ce-4ba8-a794-280c1158fb9c">
+            <DataSourceViewID>DW INSPECTION</DataSourceViewID>
+            <TableID>dbo_DIM_RESTAURANT</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM VIOLATION</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c20af94a-9afd-4e9b-b5fa-579031a9764f">
+          <ID>DIM VIOLATION</ID>
+          <Name>DIM VIOLATION</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="74de111e-6b78-4425-853d-a771590e74d5">
+            <DataSourceViewID>DW INSPECTION</DataSourceViewID>
+            <TableID>dbo_DIM_VIOLATION</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

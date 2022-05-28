@@ -1,0 +1,225 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="c9ffe029-83da-4f87-a7b2-c46b17d30b31" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>DW INSPECTION</ID>
+  <Name>DW INSPECTION</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>DW INSPECTION</DataSourceID>
+  <Schema>
+    <xs:schema id="DW_x0020_INSPECTION" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="DW_x0020_INSPECTION" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="a76df7ec-6cd5-453c-a341-a29fd955e34b">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_FACT_INSPECT" msprop:design-time-name="b2fec270-2095-4502-bf3d-f96031f5f394" msprop:DbTableName="FACT_INSPECT" msprop:FriendlyName="FACT_INSPECT" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_FACT" msprop:design-time-name="7b08c5c6-7e96-4c67-ab52-5f651e2b20f6" msprop:DbColumnName="ID_FACT" msprop:FriendlyName="ID_FACT" type="xs:int" />
+                  <xs:element name="INSPECTION_DATE" msprop:design-time-name="a95f1983-8830-49cc-a127-20cc6aa40275" msprop:DbColumnName="INSPECTION_DATE" msprop:FriendlyName="INSPECTION_DATE" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ID_GRADE" msprop:design-time-name="a14083e9-21b2-40b4-a687-0f3cab6fb026" msprop:DbColumnName="ID_GRADE" msprop:FriendlyName="ID_GRADE" type="xs:int" minOccurs="0" />
+                  <xs:element name="VIOLATION_CODE" msprop:design-time-name="87cef51e-0d0f-4b90-ad4a-fa6bfd1a2e49" msprop:DbColumnName="VIOLATION_CODE" msprop:FriendlyName="VIOLATION_CODE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CAMIS" msprop:design-time-name="92e27c5f-ef33-469f-b734-6c58c47843d6" msprop:DbColumnName="CAMIS" msprop:FriendlyName="CAMIS" type="xs:int" minOccurs="0" />
+                  <xs:element name="INSPECTION_TYPE" msprop:design-time-name="9a6e4883-3559-47ae-ad96-85fcc6ed4f99" msprop:DbColumnName="INSPECTION_TYPE" msprop:FriendlyName="INSPECTION_TYPE" type="xs:string" minOccurs="0" />
+                  <xs:element name="SCORE" msprop:design-time-name="ba69d4be-e9e8-46b0-b2f3-9c5183b57bf5" msprop:DbColumnName="SCORE" msprop:FriendlyName="SCORE" type="xs:double" minOccurs="0" />
+                  <xs:element name="ACTION" msprop:design-time-name="59390405-e657-4ebd-b11d-8d22923420b4" msprop:DbColumnName="ACTION" msprop:FriendlyName="ACTION" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_GRADING" msprop:design-time-name="b037894e-15b5-4e8f-90cb-c79098cb3c68" msprop:DbTableName="DIM_GRADING" msprop:FriendlyName="DIM_GRADING" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_GRADE" msprop:design-time-name="3921cee5-ea2b-49bb-8c06-a37a4dd794a0" msprop:DbColumnName="ID_GRADE" msprop:FriendlyName="ID_GRADE" type="xs:int" />
+                  <xs:element name="GRADE" msprop:design-time-name="218f44c9-4529-4a61-8849-72dc06f33bc0" msprop:DbColumnName="GRADE" msprop:FriendlyName="GRADE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="GRADE_DATE" msprop:design-time-name="3cf48cb3-64de-4642-a49b-b8c0ce74992f" msprop:DbColumnName="GRADE_DATE" msprop:FriendlyName="GRADE_DATE" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_RESTAURANT" msprop:design-time-name="11b4c947-ccc4-4440-9d0c-4171b647f849" msprop:DbTableName="DIM_RESTAURANT" msprop:FriendlyName="DIM_RESTAURANT" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CAMIS" msprop:design-time-name="c849ced3-6176-400f-aa72-19bddf9383ed" msprop:DbColumnName="CAMIS" msprop:FriendlyName="CAMIS" type="xs:int" />
+                  <xs:element name="DBA" msprop:design-time-name="0a134c1b-4c77-465b-8df0-595334d928cb" msprop:DbColumnName="DBA" msprop:FriendlyName="DBA" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BORO" msprop:design-time-name="e61286f1-3c66-4e60-9bdf-52333b3e17f2" msprop:DbColumnName="BORO" msprop:FriendlyName="BORO" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BUILDING" msprop:design-time-name="3ad92d9a-79d7-4b7b-bd91-18cffd46bce8" msprop:DbColumnName="BUILDING" msprop:FriendlyName="BUILDING" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="STREET" msprop:design-time-name="61e64b15-445c-4ce3-9964-8d4eacc285ef" msprop:DbColumnName="STREET" msprop:FriendlyName="STREET" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ZIPCODE" msprop:design-time-name="51618322-1e47-4d9a-bd0e-4ca7aa6e6814" msprop:DbColumnName="ZIPCODE" msprop:FriendlyName="ZIPCODE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PHONE" msprop:design-time-name="2ef88037-0838-44ae-8857-9578bd1f830b" msprop:DbColumnName="PHONE" msprop:FriendlyName="PHONE" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CUISINE_DESCRIPTION" msprop:design-time-name="2276b072-5587-44f5-b538-c40a1d5352e5" msprop:DbColumnName="CUISINE_DESCRIPTION" msprop:FriendlyName="CUISINE_DESCRIPTION" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="500" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_VIOLATION" msprop:design-time-name="eff673ce-1b3e-4a3c-aab4-2c5532b74fb1" msprop:DbTableName="DIM_VIOLATION" msprop:FriendlyName="DIM_VIOLATION" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="VIOLATION_CODE" msprop:design-time-name="947afe7b-7bb8-40ab-9bad-0d8f02174f64" msprop:DbColumnName="VIOLATION_CODE" msprop:FriendlyName="VIOLATION_CODE">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="VIOLATION_DESCRIPTION" msprop:design-time-name="761f1659-1c32-46a0-b032-b3fec549c45f" msprop:DbColumnName="VIOLATION_DESCRIPTION" msprop:FriendlyName="VIOLATION_DESCRIPTION" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1000" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CRITICAL_FLAG" msprop:design-time-name="0ca53be4-3d13-49fd-ae2f-09c20dfb7d8e" msprop:DbColumnName="CRITICAL_FLAG" msprop:FriendlyName="CRITICAL_FLAG" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_DATE" msprop:design-time-name="1211b701-cdd7-40e8-8295-c1902a4412f5" msprop:DbTableName="DIM_DATE" msprop:FriendlyName="DIM_DATE" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="INSPECTION_DATE" msprop:design-time-name="7aac3ade-ed54-4661-b54d-896c28fa54ba" msprop:DbColumnName="INSPECTION_DATE" msprop:FriendlyName="INSPECTION_DATE" type="xs:dateTime" />
+                  <xs:element name="Month" msprop:design-time-name="1792bed0-98b5-4da5-8e72-7e9d18310665" msprop:DbColumnName="Month" msprop:FriendlyName="Month" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year" msprop:design-time-name="c89c6885-2750-4e39-a2f1-08c79ea1b1c0" msprop:DbColumnName="Year" msprop:FriendlyName="Year" type="xs:int" minOccurs="0" />
+                  <xs:element name="Quarter" msprop:design-time-name="cd19c1d9-0bb9-4bff-997b-3038cde53545" msprop:DbColumnName="Quarter" msprop:FriendlyName="Quarter" type="xs:int" minOccurs="0" />
+                  <xs:element name="DayOfWeek" msprop:design-time-name="611fbc44-2bef-4de3-b49e-24fc8b2ddd08" msprop:DbColumnName="DayOfWeek" msprop:FriendlyName="DayOfWeek" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_FACT_INSPECT" />
+          <xs:field xpath="ID_FACT" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_GRADING_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_GRADING" />
+          <xs:field xpath="ID_GRADE" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_RESTAURANT_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_RESTAURANT" />
+          <xs:field xpath="CAMIS" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_VIOLATION_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_VIOLATION" />
+          <xs:field xpath="VIOLATION_CODE" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_DATE_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_DATE" />
+          <xs:field xpath="INSPECTION_DATE" />
+        </xs:unique>
+        <xs:keyref name="FK_FACT_GRADING" refer="dbo_DIM_GRADING_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_INSPECT" />
+          <xs:field xpath="ID_GRADE" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_DATE" refer="dbo_DIM_DATE_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_INSPECT" />
+          <xs:field xpath="INSPECTION_DATE" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_VIOLATION" refer="dbo_DIM_VIOLATION_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_INSPECT" />
+          <xs:field xpath="VIOLATION_CODE" />
+        </xs:keyref>
+        <xs:keyref name="FK_FACT_RESTAURANT" refer="dbo_DIM_RESTAURANT_Constraint1">
+          <xs:selector xpath=".//dbo_FACT_INSPECT" />
+          <xs:field xpath="CAMIS" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <DW_x0020_INSPECTION xmlns="" />
+  </Schema>
+</DataSourceView>

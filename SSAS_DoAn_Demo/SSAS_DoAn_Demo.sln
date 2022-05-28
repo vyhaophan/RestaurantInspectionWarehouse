@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "SSAS_DoAn_Demo", "SSAS_DoAn_Demo\SSAS_DoAn_Demo.dwproj", "{EF39F9C2-E45B-476B-BF75-8A48E1088139}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF39F9C2-E45B-476B-BF75-8A48E1088139}.Development|Default.ActiveCfg = Development
+		{EF39F9C2-E45B-476B-BF75-8A48E1088139}.Development|Default.Build.0 = Development
+		{EF39F9C2-E45B-476B-BF75-8A48E1088139}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49B9EE4F-CBB5-4CC9-B60B-E674DD4B06FB}
+	EndGlobalSection
+EndGlobal
